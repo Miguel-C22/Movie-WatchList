@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/Images/headerImg.webp">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Images/headerImg.webp">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Images/headerImg.webp">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Movie App</title>
+</head>
+<body>
+    
+    <div class="container">
+        <img class="headerImg" src="Images/headerImg.webp" alt="">
+        <div class="searchContainer">
+            <input type="text" placeholder="Search Movie..." id="movieSearch">
+            <button id="btnSearch">Search</button>
+        </div>
+
+        <div class="pagesContainer">
+            <button  id="searchPage">Search Movies</button>
+            <button  id="watchListPage">Watch List</button>
+        </div>
+    </div>
+    
+    <div id="movieContainer"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin: auto;
+}
+
+.searchContainer{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.pagesContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 20px 100px;
+    gap: 10px;
+}
+
+.headerImg{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+#movieSearch{
+   padding: 10px;
+   font-size: 1rem;
+   height: 17px;
+   box-shadow: black 5px 5px 10px;
+}
+
+#btnSearch,
+#searchPage,
+#watchListPage{
+    margin: 0 5px;
+    width: 125px;
+    height: 40px;
+    box-shadow: black 5px 5px 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-style: none;
+    color: whitesmoke;
+    border-radius: 5px;
+    
+}
+
+#searchPage,
+#watchListPage{
+  background-color: #4681f4;  
+}
+
+#btnSearch{
+   background-color: #55c2da; 
+}
+
+#movieContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.searchContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.individualMovieContainer{
+    display: flex;
+    padding: 20px 50px 10px;
+    height: auto;
+    border-bottom: solid 2px;
+    align-items: center;
+}
+
+.posters{
+    width: 100%;
+    max-width: 250px;
+    height: 400px;
+    box-shadow: black 5px 5px 10px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+}
+
+.ratingAndTimeContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px 0 0;
+    font-style: italic;
+}
+
+.genre{
+   margin: 10px; 
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.btnAdd,
+.btnRemove{
+    margin: 10px 5px 0;
+    width: 125px;
+    height: 30px;
+    box-shadow: black 5px 5px 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-style: none;
+    color: whitesmoke;
+    border-radius: 5px;
+    background-color: #dd7973;  
+}
+
+button:disabled{
+    background-color: rgb(204, 201, 201); 
+}
+
+.plot{
+    margin: 30px 20px 0;
+    font-size: 1.2rem;
+}
+
+.errorMessage{
+    font-size: 3rem;
+}
+.gif{
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 800px){
+    .individualMovieContainer{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 20px 0;
+    }
+    .posters{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
